@@ -21,6 +21,7 @@ a {
 .header {
   background-image: url('../images/bg.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
   padding-bottom: 92px;
 }
@@ -81,8 +82,6 @@ a {
   padding: 0 387px;
   margin-bottom: 315px;
 }
-
-
 
 /* End header */
 
