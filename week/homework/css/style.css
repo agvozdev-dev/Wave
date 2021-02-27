@@ -90,34 +90,74 @@ a {
 /* about */
 
 .about {
-  margin-bottom: 189px;
+  padding-top: 185px;
 }
 
 .about__title {
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-size: 48px;
-  line-height: 56.35px;
-  letter-spacing: 0.7px;
+  line-height: 56px;
+  letter-spacing: 0.6px;
   font-weight: 600;
-  text-align: center;
   margin-bottom: 96px;
+  padding: 0 154px 0 155px; 
   color: #01353E;
+  position: relative;
+}
+
+.about__title::after {
+  position: absolute;
+  content: '/';
+  color: #00B2A0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 72px;
+  line-height: 85px;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+  top: 3px;
 }
 
 .about-wrapper {
   display: flex;
   flex-direction: column;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+  color: #242121;
 }
 
 .about__text {
   display: flex;
 } 
 
+.about__text:first-child {
+  padding-top: 2px;
+}
+
+.about__text:nth-child(2) {
+
+}
+
 .about__text-item {
-  width: 50%;
-  padding-right: 120px;
+  max-width: 480px;
   margin-bottom: 30px;
 }
+
+.about__first-row {
+  margin-right: 110px;
+}
+
+.about__second-row,
+.about__third-row {
+  margin-right: 120px;
+}
+
+.about__fourth-row {
+  margin-right: 119px;
+}
+
 
 /* end about */
