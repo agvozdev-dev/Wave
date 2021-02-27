@@ -85,29 +85,18 @@ a {
 
 /* End header */
 
-
-
-/* about */
-
-.about__wrapper {
-  padding-top: 185px;
-  padding-bottom: 199px;
-}
-
-.about__title {
+.title {
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-size: 48px;
   line-height: 56px;
   letter-spacing: 0.6px;
   font-weight: 600;
-  margin-bottom: 96px;
-  padding: 0 154px 0 155px; 
   color: #01353E;
   position: relative;
 }
 
-.about__title::after {
+.title::after {
   position: absolute;
   content: '/';
   color: #00B2A0;
@@ -116,7 +105,28 @@ a {
   line-height: 85px;
   letter-spacing: 0.6px;
   font-weight: 600;
+}
+
+
+
+/* about */
+
+.about__title {
+  padding-left: 155px;
+}
+
+.about__title::after {
   top: 3px;
+  right: 105px;
+}
+
+.about__wrapper {
+  padding-top: 185px;
+  padding-bottom: 199px;
+}
+
+.about__title {
+  margin-bottom: 96px;
 }
 
 .about__text-wrapper {
@@ -182,3 +192,22 @@ a {
 }
 
 /* end about */
+
+
+/* benefits */
+
+.benefits__wrapper {
+  padding-top: 200px;
+  padding-bottom: 20px;
+  background-color: #F8F8F8;
+}
+
+.benefits__title {
+  padding-left: 293px;
+}
+
+.benefits__title::after {
+  right: 250px;
+}
+
+/* end benefits */
