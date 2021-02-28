@@ -204,10 +204,134 @@ a {
 
 .benefits__title {
   padding-left: 293px;
+  margin-bottom: 101px;
 }
 
 .benefits__title::after {
   right: 250px;
 }
+
+.benefits__content-wrapper {
+  margin-bottom: 102px;
+}
+
+.benefits__list {
+  display: flex;
+
+  
+}
+
+.benefit__title-wrapper {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 18px;
+  font-weight: normal;
+  letter-spacing: 0.6px;
+}
+
+
+
+
+
+.benefits__text {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+  font-weight: 300;
+  text-transform: none;
+}
+
+.benefits__list-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+}
+
+.title__lodging,
+.title__flight {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+
+  max-width: 155px;
+  position: relative;
+}
+
+.benefits__list-item:first-child {
+  margin-right: 74px;
+}
+
+.benefits__list-item:nth-child(2) {
+  margin-right: 76px;
+}
+
+.title__lodging {
+  margin: 18px 0 31px 131px;
+}
+
+.title__lodging::before {
+  content: '';
+  background-image: url('../images/sun-icon.svg');
+  width: 55px;
+  height: 50px;
+  position: absolute;
+  left: -65px;
+  top: -18px;
+}
+
+.title__flight--top {
+  margin: 5px 0 10px 144px;
+}
+
+.title__flight--bottom {
+  margin: 0px 0 10px 144px;
+}
+
+.learning__wrapper {
+  margin-bottom: 17px;
+}
+
+.flight__wrapper {
+  margin-bottom: 15px;
+}
+
+.flight__wrapper,
+.learning__wrapper {
+  position: relative;
+}
+
+.flight__wrapper::before {
+  content: '';
+  background-image: url('../images/plane-icon.svg');
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 84px;
+  top: -2px;
+}
+
+.title__learning--top {
+  margin: 3px 0 10px 133px;
+}
+
+.title__learning--bottom {
+  margin: 0px 0 10px 133px;
+}
+
+.learning__wrapper::before {
+  content: '';
+  background-image: url('../images/surfer-icon.svg');
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 73px;
+  top: -1px;
+}
+
 
 /* end benefits */
