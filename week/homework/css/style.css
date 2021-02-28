@@ -295,5 +295,31 @@ a {
   top: 2px;
 }
 
-
 /* ======= END BENEFITS ======= */
+
+/* ======= PERCENTS ======= */
+
+.wawe {
+  max-width: 346px;
+}
+
+.wawe:first-child {
+  padding-top: 3px;
+}
+
+.wawe:nth-child(2) {
+  padding-top: 11px;
+}
+
+.wawe:last-child {
+  padding-top: 8px;
+}
+
+.percent__value {
+  font-family: 'Roboto Condensed', sans-serif; 
+  font-weight: 400;
+  font-size: 24px;
+  margin-left: 6px;
+}
+
+/* ======= END PERCENTS ======= */
