@@ -186,7 +186,7 @@ a {
 
 .benefits__wrapper {
   padding-top: 200px;
-  padding-bottom: 20px;
+  padding-bottom: 200px;
   background-color: #F8F8F8;
 }
 
@@ -295,23 +295,31 @@ a {
   top: 2px;
 }
 
-/* ======= END BENEFITS ======= */
-
-/* ======= PERCENTS ======= */
-
-.wawe {
-  max-width: 346px;
+.statistics__wrapper {
+  display: flex;
 }
 
-.wawe:first-child {
+.statistics__item {
+  flex-basis: 50%;
+}
+
+.statistics__item p:first-child {
+  margin-bottom: 30px;
+}
+
+.wawe__percent {
+  max-width: 350px;
+}
+
+.wawe__percent:first-child {
   padding-top: 3px;
 }
 
-.wawe:nth-child(2) {
+.wawe__percent:nth-child(2) {
   padding-top: 11px;
 }
 
-.wawe:last-child {
+.wawe__percent:last-child {
   padding-top: 8px;
 }
 
