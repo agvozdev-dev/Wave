@@ -16,7 +16,29 @@ a {
   padding: 0 15px;
 }
 
-/* header */
+.title {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+  color: #01353E;
+  position: relative;
+}
+
+.title::after {
+  position: absolute;
+  content: '/';
+  color: #00B2A0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 72px;
+  line-height: 85px;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+}
+
+/* ======= HEADER ======= */
 
 .header {
   background-image: url('../images/bg.jpg');
@@ -83,33 +105,9 @@ a {
   margin-bottom: 315px;
 }
 
-/* End header */
+/* ======= END HEADER ======= */
 
-.title {
-  font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
-  font-size: 48px;
-  line-height: 56px;
-  letter-spacing: 0.6px;
-  font-weight: 600;
-  color: #01353E;
-  position: relative;
-}
-
-.title::after {
-  position: absolute;
-  content: '/';
-  color: #00B2A0;
-  font-family: 'Raleway', sans-serif;
-  font-size: 72px;
-  line-height: 85px;
-  letter-spacing: 0.6px;
-  font-weight: 600;
-}
-
-
-
-/* about */
+/* ======= ABOUT ======= */
 
 .about__title {
   padding-left: 155px;
@@ -191,10 +189,10 @@ a {
   margin-right: 121px;
 }
 
-/* end about */
+/* ======= END ABOUT ======= */
 
 
-/* benefits */
+/* ======= BENEFITS ======= */
 
 .benefits__wrapper {
   padding-top: 200px;
@@ -334,4 +332,4 @@ a {
 }
 
 
-/* end benefits */
+/* ======= END BENEFITS ======= */
