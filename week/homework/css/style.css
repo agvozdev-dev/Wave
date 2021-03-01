@@ -7,6 +7,11 @@ body {
   letter-spacing: 0.6px;
 }
 
+img {
+    /* override reset.css value */
+    display: inline;
+}
+
 a {
   cursor: pointer;
   text-decoration: none;
@@ -181,7 +186,6 @@ a {
 
 /* ======= END ABOUT ======= */
 
-
 /* ======= BENEFITS ======= */
 
 .benefits__wrapper {
@@ -331,3 +335,32 @@ a {
 }
 
 /* ======= END PERCENTS ======= */
+
+/* ======= TOP ======= */
+
+.top__wrapper {
+  padding-bottom: 347px;
+  background-image: url('../images/surfer.png');
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.top__content-wrapper {
+  padding-top: 199px;
+  margin-right: auto;
+}
+
+.top__content-title {
+  margin-bottom: 100px;
+}
+
+.top__content-item {
+  max-width: 510px;
+  margin-bottom: 30px;
+}
+
+.top__content-item:last-child {
+  margin-bottom: 0;
+}
+
+/* ======= END TOP ======= */
