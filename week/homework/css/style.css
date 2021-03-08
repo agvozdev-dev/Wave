@@ -52,6 +52,11 @@ button {
   line-height: 1.18;
 }
 
+.blockquote__content,
+.benefits__content {
+  background-color: #F8F8F8;
+}
+
 /* ======= HEADER ======= */
 
 .header {
@@ -199,7 +204,6 @@ button {
 .benefits__content {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: #F8F8F8;
 }
 
 .benefits__title {
@@ -401,8 +405,6 @@ button {
   margin-left: 22px;
 }
 
-
-
 .gallery__images {
   display: flex;
   flex-wrap: wrap;
@@ -415,8 +417,16 @@ button {
   margin-bottom: 40px;
 }
 
+.image:hover {
+  opacity: 0.9;
+}
+
 .mixitup-control-active {
   color: #00B2A0;
+}
+
+.show-more__btn {
+  margin-bottom: 200px;
 }
 
 .button {
@@ -432,7 +442,25 @@ button {
 
 .button:active {
   background-color: #029283;
-} 
+}
+
+.blockquote {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.1;
+  padding-top: 80px;
+  padding-bottom: 62px;
+}
+
+.author {
+  display: block;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 50%;
+}
+
 
 
 /*END GALLERY*/
