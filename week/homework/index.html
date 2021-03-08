@@ -10,6 +10,7 @@
     href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Wawe</title>
 </head>
@@ -207,7 +208,63 @@
     </div>
   </section>
 
+  <section class="gallery">
+    <div class="container">
+      <h2 class="title gallery__title">Галерея</h2>
+      
+      <ul class="gallery__filter">
+        <li class="filter__item">
+          <button class="filter__btn" type="button" data-filter="all">Все</button>
+        </li>
+        <li class="filter__item">
+          <button class="filter__btn" type="button"  data-filter=".category-tourist">Туристы</button>
+        </li>
+        <li class="filter__item">
+          <button class="filter__btn" type="button" data-filter=".category-nature">Природа</button>
+        </li>
+        <li class="filter__item">
+          <button class="filter__btn" type="button" data-filter=".category-profi">Профи</button>
+        </li>
+      </ul>
+
+      <div class="gallery__images">
+        <div class="image mix category-profi">
+          <a href="images/gallery/1.jpg" data-fancybox="images">
+            <img src="images/gallery/1.jpg" alt="Изображение галереи">
+          </a>
+        </div>
+        <div class="image mix category-tourist">
+          <a href="images/gallery/2.jpg" data-fancybox="images">
+            <img src="images/gallery/2.jpg" alt="Изображение галереи">
+          </a>
+        </div>
+        <div class="image mix category-profi">
+          <a href="images/gallery/3.jpg" data-fancybox="images">
+            <img src="images/gallery/3.jpg" alt="Изображение галереи">
+          </a>
+        </div>
+        <div class="image mix category-tourist">
+          <a href="images/gallery/4.jpg" data-fancybox="images">
+            <img src="images/gallery/4.jpg" alt="Изображение галереи">
+          </a>
+        </div>
+        <div class="image mix category-nature">
+          <a href="images/gallery/5.jpg" data-fancybox="images">
+            <img src="images/gallery/5.jpg" alt="Изображение галереи">
+          </a>
+        </div>
+        <div class="image mix category-tourist">
+          <a href="images/gallery/6.jpg" data-fancybox="images">
+            <img src="images/gallery/6.jpg" alt="Изображение галереи">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
