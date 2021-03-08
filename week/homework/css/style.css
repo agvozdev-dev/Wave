@@ -461,6 +461,18 @@ button {
   margin-left: 50%;
 }
 
+.video__link {
+  background-image: url('../images/video-bg.jpg');
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 200px 0;
+}
+
 
 
 /*END GALLERY*/
