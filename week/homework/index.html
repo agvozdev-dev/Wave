@@ -47,7 +47,7 @@
     </div>
   </header>
 
-  <section class="about about__content">
+  <section class="about">
     <div class="container">
 
       <h2 class="title about__title">
@@ -104,13 +104,13 @@
     </div>
   </section>
 
-  <section class="benefits benefits__content">
+  <section class="benefits">
     <div class="container">
       <h2 class="title benefits__title">В школе вы получите</h2>
 
       <ul class="benefits__list">
         <li class="benefits__item">
-          <h3 class="benefits__header benefits__lodging benefits__header--icon1">Проживание</h3>
+          <h3 class="benefits__heading benefits__heading--icon1">Проживание</h3>
           <div class="benefits__text">
             <p>
               Наша школа серфинга находится в 100 м от океанского побережья. К услугам гостей открытый бассейн и
@@ -120,7 +120,7 @@
         </li>
 
         <li class="benefits__item">
-          <h3 class="benefits__header benefits__header--icon2">Перелет и страховку</h3>
+          <h3 class="benefits__heading benefits__heading--icon2">Перелет и страховку</h3>
           <div class="benefits__text">
             <p>
               Все участники программы застрахованы страховой компанией Allianz.
@@ -132,7 +132,7 @@
         </li>
 
         <li class="benefits__item">
-          <h3 class="benefits__header benefits__header--icon3">Обучение и экипировку</h3>
+          <h3 class="benefits__heading benefits__heading--icon3">Обучение и экипировку</h3>
           <div class="benefits__text">
             <p>
               Все оборудование и экипировка известных производителей и предоставляется на весь курс программы.
@@ -143,24 +143,24 @@
       </ul>
 
       <div class="statistic">
-        <div class="statistic__content">
+        <ul class="statistic__content">
 
-          <div class="statistic__item statistic__item--icon1">
+          <li class="statistic__item statistic__item--icon1">
             <span class="percent percent-1">85%</span>
             <p>Приехали второй раз</p>
-          </div>
+          </li>
 
-          <div class="statistic__item statistic__item--icon2">
+          <li class="statistic__item statistic__item--icon2">
             <span class="percent percent-2">95%</span>
             <p>Научились кататься</p>
-          </div>
+          </li>
 
 
-          <div class="statistic__item statistic__item--icon3">
+          <li class="statistic__item statistic__item--icon3">
             <span class="percent percent-3">99%</span>
             <p>Довольных клиентов</p>
-          </div>
-        </div>
+          </li>
+        </ul>
 
         <div class="statistic__text">
           <p>
@@ -178,7 +178,7 @@
     </div>
   </section>
 
-  <section class="reach-top reach-top__content">
+  <section class="reach-top" style="background-image: url('images/surfer.png');">
     <div class="container">
 
       <h2 class="reach-top__title title">
@@ -227,55 +227,74 @@
         </li>
       </ul>
 
-      <div class="gallery__images">
-        <div class="image mix category-profi">
-          <a href="images/gallery/1.jpg" data-fancybox="images">
-            <img src="images/gallery/1.jpg" alt="Изображение галереи">
+      <!-- затемнение для фотографий -->
+      <ul class="gallery__images">
+        <li class="gallery__item mix category-profi" >
+          <a class="gallery__link" href="images/gallery/1.jpg" data-fancybox="images">
+            <img class="gallery__image" src="images/gallery/1.jpg" alt="Изображение галереи">
           </a>
-        </div>
-        <div class="image mix category-tourist">
-          <a href="images/gallery/2.jpg" data-fancybox="images">
-            <img src="images/gallery/2.jpg" alt="Изображение галереи">
+        </li>
+        <li class="gallery__item mix category-tourist">
+          <a class="gallery__link" href="images/gallery/2.jpg" data-fancybox="images">
+            <img class="gallery__image" src="images/gallery/2.jpg" alt="Изображение галереи">
           </a>
-        </div>
-        <div class="image mix category-profi">
-          <a href="images/gallery/3.jpg" data-fancybox="images">
-            <img src="images/gallery/3.jpg" alt="Изображение галереи">
+        </li>
+        <li class="gallery__item mix category-profi">
+          <a class="gallery__link" href="images/gallery/3.jpg" data-fancybox="images">
+            <img class="gallery__image" src="images/gallery/3.jpg" alt="Изображение галереи">
           </a>
-        </div>
-        <div class="image mix category-tourist">
-          <a href="images/gallery/4.jpg" data-fancybox="images">
-            <img src="images/gallery/4.jpg" alt="Изображение галереи">
+        </li>
+        <li class="gallery__item mix category-tourist">
+          <a class="gallery__link" href="images/gallery/4.jpg" data-fancybox="images">
+            <img class="gallery__image" src="images/gallery/4.jpg" alt="Изображение галереи">
           </a>
-        </div>
-        <div class="image mix category-nature">
-          <a href="images/gallery/5.jpg" data-fancybox="images">
-            <img src="images/gallery/5.jpg" alt="Изображение галереи">
+        </li>
+        <li class="gallery__item mix category-nature">
+          <a class="gallery__link" href="images/gallery/5.jpg" data-fancybox="images">
+            <img class="gallery__image" src="images/gallery/5.jpg" alt="Изображение галереи">
           </a>
-        </div>
-        <div class="image mix category-tourist">
-          <a href="images/gallery/6.jpg" data-fancybox="images">
-            <img src="images/gallery/6.jpg" alt="Изображение галереи">
+        </li>
+        <li class="gallery__item mix category-tourist">
+          <a class="gallery__link" href="images/gallery/6.jpg" data-fancybox="images">
+            <img class="gallery__image" src="images/gallery/6.jpg" alt="Изображение галереи">
           </a>
-        </div>
-      </div>
+        </li>
+      </ul>
 
       <button class="show-more__btn button" type="button">Показать еще</button>
     </div>
 
-    <div class="blockquote__content">
+    <blockquote class="blockquote">
       <div class="container">
-        <blockquote class="blockquote">
-          «Если сомневаешься – иди катайся.»
-          <cite class="author">Нэт Янг, первый Чемпион Мира по сёрфингу</cite>
-        </blockquote>
+        «Если сомневаешься – иди катайся.»
+        <cite class="author">Нэт Янг, первый Чемпион Мира по сёрфингу</cite>  
       </div>
-    </div>
+    </blockquote>
 
     <div class="container">
-      <a class="video__link" data-fancybox href="https://www.youtube.com/watch?v=LFDaKUHgK7E">
+      <a class="video__link" style="background-image: url('images/video-bg.jpg');" data-fancybox href="https://www.youtube.com/watch?v=LFDaKUHgK7E">
+        <!-- вставить svg, добавить анимацию для кнопки-стрелочки -->
         <img src="images/play-icon.svg" alt="Иконка запуска на просмотр видеоролика о серфинге">
       </a>
+
+      <ul class="numbers">
+        <li class="numbers__item">
+          450
+          <span>туристов</span>
+        </li>
+        <li class="numbers__item">
+          2500
+          <span>часов катания</span>
+        </li>
+        <li class="numbers__item">
+          10
+          <span>проф. тренеров</span>
+        </li>
+        <li class="numbers__item">
+          365
+          <span>дней в году</span>
+        </li>
+      </ul>
     </div>
 
   </section>

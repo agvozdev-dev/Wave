@@ -1,9 +1,5 @@
 $(function () {
-  mixitup('.gallery__images', {
-    animation: {
-      enable: false
-    }
-  });
+  mixitup('.gallery__images');
 
   $('[data-fancybox="images"]').fancybox({
     buttons: [
