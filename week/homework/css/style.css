@@ -33,6 +33,15 @@ button {
   padding: 0 15px;
 }
 
+.outline__color--primary {
+  outline-color: #00B2A0;
+}
+
+/* to bottom logo */
+.outline__color--secondary {
+  outline-color: #fff;
+}
+
 .title {
   font-family: 'Raleway', Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
@@ -85,6 +94,7 @@ button {
   font-weight: 400;
   font-size: 24px;
   padding-bottom: 5px;
+  
 }
 
 .menu__item:not(:first-child) {
@@ -501,6 +511,11 @@ button {
 /* стилизовать outline */
 
 /* ====== BLOG ======*/
+
+.blog__slider {
+  background-color: rgba(24, 21, 21, 0.3);
+}
+
 .blog__title {
   margin-bottom: 230px;
 }
@@ -508,6 +523,7 @@ button {
 .blog__slider {
   text-align: center;
   cursor: pointer;
+  opacity: 0.7;
 }
 
 .slider__item {
@@ -556,6 +572,7 @@ button {
 
 .slick-dots .slick-active button {
   background-color: #00B2A0;
+  outline-color: #fff;
 }
 /* ====== END BLOG ======*/
 
