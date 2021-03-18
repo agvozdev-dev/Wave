@@ -49,6 +49,7 @@ button {
   content: '/';
   color: #00B2A0;
   font-size: 72px;
+  z-index: 1;
 }
 
 .blockquote,
@@ -326,24 +327,43 @@ button {
 
 .reach-top {
   padding-bottom: 314px;
+  padding-top: 199px;
+  position: relative;
+}
+
+.reach-top__text-wrapper {
+  max-width: 50%;
+}
+
+.reach-top__bg {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 200px;
   background-repeat: no-repeat;
   background-position-x: right;
-  padding-top: 199px;
+  background-size: 50% 100%;
 }
 
 .reach-top__title {
-  text-align: inherit;
   margin-bottom: 100px;
+  max-width: 860px;
+  text-align: right;
 }
 
 .reach-top__text {
+  max-width: 860px;
+}
+
+.reach-top__text p {
   max-width: 510px;
+  margin: 0 0 0 auto;
 }
 
 .reach-top__text p:not(:nth-child(-n+1)) {
   margin-bottom: 30px;
 }
-
 
 /* ======= END TOP ======= */
 
