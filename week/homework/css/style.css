@@ -512,6 +512,10 @@ button {
 
 /* ====== BLOG ======*/
 
+.blog {
+  margin-bottom: 200px;
+}
+
 .blog__slider {
   background-color: rgba(24, 21, 21, 0.3);
 }
@@ -577,6 +581,39 @@ button {
 /* ====== END BLOG ======*/
 
 
+/* ====== TEAM ======*/
+.team {
+  padding-bottom: 204px;
+}
+
+.team__title {
+  margin-bottom: 212px;
+}
+
+.team__images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__item {
+  text-align: center;
+}
+
+.team__image {
+  margin-bottom: 23px;
+}
+
+.team__name {
+  font-size: 18px;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.team__position {
+  font-weight: 400;
+  line-height: 1.3;
+}
+/* ====== END TEAM ======*/
 
 
 
