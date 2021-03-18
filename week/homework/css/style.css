@@ -182,6 +182,7 @@ button {
 .about__text p:nth-child(odd) {
   margin-right: 118px;
 }
+
 /* ======= END ABOUT ======= */
 
 /* ======= BENEFITS ======= */
@@ -226,7 +227,7 @@ button {
   height: 50px;
   width: 55px;
   background-repeat: no-repeat;
-  left: -20px; 
+  left: -20px;
 }
 
 .benefits__heading--icon1::before {
@@ -421,7 +422,7 @@ button {
 .button:hover {
   background-color: #00B2A0;
   color: #fff;
-} 
+}
 
 .button:active {
   background-color: #029283;
@@ -461,7 +462,7 @@ button {
 }
 
 .numbers {
-  display: flex; 
+  display: flex;
   justify-content: center;
   margin: 0 auto;
   padding-bottom: 200px;
@@ -483,9 +484,24 @@ button {
   font-size: 14px;
   padding-top: 5px;
 }
+
 /* ======= END GALLERY ======= */
 
 /* стилизовать outline */
 
-/* .sr-only */
-/* visual hidden css */
+/* ======= FOR SCREEN READERS ======= */
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+/* ======= END FOR SCREEN READERS ======= */
