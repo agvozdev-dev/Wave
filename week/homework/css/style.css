@@ -500,6 +500,72 @@ button {
 
 /* стилизовать outline */
 
+/* ====== BLOG ======*/
+.blog__title {
+  margin-bottom: 230px;
+}
+
+.blog__slider {
+  text-align: center;
+  cursor: pointer;
+}
+
+.slider__item {
+  color: #fff;
+  padding-top: 315px;
+  max-width: 1175px;
+}
+
+.slider__heading,
+.slider__description {
+  margin: 0 0 0 auto;
+  max-width: 585px;
+  text-align: left;
+}
+
+.slider__heading {
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.slider__description {
+  padding-bottom: 255px;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 77px;
+}
+
+.slick-dots button {
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.slick-dots li:not(:first-child) {
+  margin-left: 15px;
+}
+
+.slick-dots .slick-active button {
+  background-color: #00B2A0;
+}
+/* ====== END BLOG ======*/
+
+
+
+
+
+
+
+
 /* ======= FOR SCREEN READERS ======= */
 .sr-only {
   border: 0 !important;
