@@ -324,7 +324,7 @@ button {
 /* ======= TOP ======= */
 
 .reach-top {
-  padding-bottom: 317px;
+  padding-bottom: 314px;
   background-repeat: no-repeat;
   background-position-x: right;
   padding-top: 199px;
@@ -454,6 +454,10 @@ button {
   justify-content: center;
   align-items: center;
   margin: 200px 0;
+}
+
+.play-icon:hover {
+  fill: #4b4f4e;
 }
 
 .numbers {
