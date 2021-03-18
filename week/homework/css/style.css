@@ -404,25 +404,16 @@ button {
 .gallery__item {
   margin-right: 40px;
   margin-bottom: 40px;
+  background-color: #333;
 }
 
-.gallery__item {
-  position: relative;
-}
-
-.gallery__item::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(51, 51, 51, .7);
-  opacity: 0;
-}
-
-.gallery__item:hover::after {
+.gallery__link img {
+  transition: opacity 0.3s;
   opacity: 1;
+}
+
+.gallery__link img:hover {
+  opacity: .3;
 }
 
 .mixitup-control-active {
