@@ -42,6 +42,10 @@ button {
   outline-color: #fff;
 }
 
+.bg__color--gray {
+  background-color: #F8F8F8;;
+}
+
 .title {
   font-family: 'Raleway', Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
@@ -59,11 +63,6 @@ button {
   color: #00B2A0;
   font-size: 72px;
   z-index: 1;
-}
-
-.blockquote,
-.benefits {
-  background-color: #F8F8F8;
 }
 
 /* ======= HEADER ======= */
@@ -615,6 +614,58 @@ button {
 }
 /* ====== END TEAM ======*/
 
+/* ====== TARRIFS ======*/
+.tarrifs__title {
+  padding-bottom: 210px;
+  padding-top: 195px;
+}
+
+.tariffs__list {
+  display: flex;
+  justify-content: space-between;
+  min-height: 577px;
+}
+
+.tarrif__item {
+  padding: 50px 30px 0;
+  max-width: 360px;
+  background-color: #fff;
+  flex-grow: 1;
+}
+
+.service__list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.tarrif__item:not(:first-child) {
+  margin-left: 60px;
+}
+
+.service__item:not(:last-child),
+.service__item:not(:first-child) {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.service__item:first-child,
+.service__item:last-child {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+.service__item:first-child {
+  margin-bottom: 60px;
+}
+
+
+.service__item:last-child {
+  margin-bottom: 45px;  
+  margin-top: auto;  
+}
+/* ====== END TARRIFS ======*/
 
 
 
