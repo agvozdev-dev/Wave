@@ -22,8 +22,8 @@
     <div class="container">
 
       <div class="header__top">
-        <a class="header__logo logo outline__color--primary" href="#">
-          <img src="images/logo.svg" alt="Логотип">
+        <a class="logo outline__color--primary" href="#">
+          <img class="logo__img" src="images/logo.svg" alt="Логотип">
         </a>
         <nav class="menu">
           <ul class="menu__list">
@@ -475,6 +475,63 @@
       </ul>
     </div>
   </section>
+
+  <div class="map">
+    <div class="map__content" style="background-image: url('images/map.jpg');"></div>
+  </div>
+
+  <section class="feedback">
+    <div class="container">
+      <h2 class="title feedback__title">Оставить заявку</h2>
+      <div class="feedback__wrapper">
+        <form class="feedback__form">
+          <input class="input outline__color--primary" type="text" placeholder="Имя">
+          <input class="input outline__color--primary" type="text" placeholder="Телефон">
+          <textarea class="textarea outline__color--primary" placeholder="Оставьте сообщение, и мы свяжемся с Вами в ближайшее время"></textarea>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+        <ul class="feedback__contacts">
+          <li class="feedback__contact-item">
+            <p class="feedback__contact-text">Есть вопрос?</p>
+            <p class="feedback__contact-text">Вы можете связаться с нами:</p>
+          </li>
+          <li class="feedback__contact-item">
+            <a href="tel:+34674863788" class="feedback__phone-link outline__color--primary">
+              <p>WhatsApp, Viber, Telegram</p>
+              <p>+3 467 486-37-88</p>
+            </a>
+          </li>
+          <li class="feedback__contact-item">
+            <address class="address">
+              Avenida grandes playas 79, 
+              Corralejo la Oliva Fuerteventura, 
+              Spain. 35660
+            </address>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="social-media">
+    <ul class="social-media__list">
+      <li class="social-media__item">
+        <a class="social__media-link outline__color--primary" href="https://www.instagram.com/" target="_blank">Instagram</a>
+      </li>
+      <li class="social-media__item">
+        <a class="social__media-link outline__color--primary" href="https://www.facebook.com/" target="_blank">Facebook</a>
+      </li>
+      <li class="social-media__item">
+        <a class="social__media-link outline__color--primary" href="https://www.youtube.com/" target="_blank">Youtube</a>
+      </li>
+    </ul>
+  </div>
+
+  <footer class="footer">
+    <a class="logo outline__color--secondary" href="#">
+      <img class="logo__img" src="images/logo.svg" alt="Логотип">
+    </a>
+  </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/mixitup.min.js"></script>
