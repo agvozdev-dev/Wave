@@ -644,7 +644,7 @@ button {
 
 .tarrifs__title {
   padding-bottom: 210px;
-  padding-top: 195px;
+  padding-top: 200px;
 }
 
 .tariffs__list {
@@ -657,40 +657,45 @@ button {
   padding: 50px 30px 0;
   max-width: 360px;
   background-color: #fff;
-  flex-grow: 1;
+  flex-grow: 1; /*???*/
+  display: flex;
+  flex-direction: column;
 }
 
 .service__list {
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 
 .tarrif__item:not(:first-child) {
   margin-left: 60px;
 }
 
-.service__item:not(:last-child),
-.service__item:not(:first-child) {
+.service__item{
   font-weight: 400;
   margin-bottom: 20px;
 }
 
-.service__item:first-child,
-.service__item:last-child {
-  text-align: center;
-  font-size: 36px;
-  line-height: 1.1;
-}
-
-.service__item:first-child {
+.tariff__name{
   margin-bottom: 60px;
 }
 
+.tariff__name,
+.tariff__price {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.1;
+  font-weight: 400;
+}
 
-.service__item:last-child {
+.tariff__price {
   margin-bottom: 45px;  
   margin-top: auto;  
+}
+
+.tariff__currency {
+  font-weight: 400;
+  font-size: 18px;
 }
 /* ====== END TARRIFS ======*/
 
