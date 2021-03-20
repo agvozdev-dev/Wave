@@ -701,18 +701,19 @@ button {
 
 /* ====== MAP ======*/
 .map {
-  padding: 200px 30px;
+  padding: 198px 0;
 }
 
 .map__content {
-  background-position: center;
-  height: 640px;
-  max-width: 1470px;
   margin: 0 auto;
 }
 /* ====== END MAP ======*/
 
 /* ====== FEEDBACK ======*/
+.feedback {
+  margin-top: 2px;
+}
+
 .feedback__title {
   margin-bottom: 240px;
 }
@@ -795,7 +796,7 @@ address {
 .textarea {
   resize: none;
   min-height: 155px;
-  margin-bottom: 73px;
+  margin-bottom: 75px;
 }
 /* ====== END FEEDBACK ======*/
 
