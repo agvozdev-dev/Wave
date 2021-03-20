@@ -22,17 +22,17 @@
     <div class="container">
 
       <div class="header__top">
-        <a class="logo outline__color--primary" href="#">
+        <a class="logo" href="#">
           <img class="logo__img" src="images/logo.svg" alt="Логотип">
         </a>
         <nav class="menu">
           <ul class="menu__list">
-            <li class="menu__item"><a class="menu__link outline__color--primary" href="#">О нас</a></li>
-            <li class="menu__item"><a class="menu__link outline__color--primary" href="#">Услуги</a></li>
-            <li class="menu__item"><a class="menu__link outline__color--primary" href="#">Стоимость</a></li>
-            <li class="menu__item"><a class="menu__link outline__color--primary" href="#">Блог</a></li>
-            <li class="menu__item"><a class="menu__link outline__color--primary" href="#">Команда</a></li>
-            <li class="menu__item"><a class="menu__link outline__color--primary" href="#">Контакты</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">О нас</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Услуги</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Стоимость</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Блог</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Команда</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -46,6 +46,7 @@
           <span class="sr-only">Переход к следующему разделу</span>
         </a>
       </div>
+
 
     </div>
   </header>
@@ -107,7 +108,7 @@
     </div>
   </section>
 
-  <section class="benefits bg__color--gray">
+  <section class="benefits">
     <div class="container">
       <h2 class="title benefits__title">В школе вы получите</h2>
 
@@ -183,7 +184,7 @@
 
   <section class="reach-top">
 
-    <div class="reach-top__text-wrapper">
+    <div class="reach-top__wrapper">
       <h2 class="reach-top__title title">
         Покоряй вершины
       </h2>
@@ -236,32 +237,32 @@
 
       <ul class="gallery__images">
         <li class="gallery__item mix category-profi">
-          <a class="gallery__link outline__color--primary" href="images/gallery/1.jpg" data-fancybox="images">
+          <a class="gallery__link" href="images/gallery/1.jpg" data-fancybox="images">
             <img class="gallery__image" src="images/gallery/1.jpg" alt="Изображение галереи">
           </a>
         </li>
         <li class="gallery__item mix category-tourist">
-          <a class="gallery__link outline__color--primary" href="images/gallery/2.jpg" data-fancybox="images">
+          <a class="gallery__link" href="images/gallery/2.jpg" data-fancybox="images">
             <img class="gallery__image" src="images/gallery/2.jpg" alt="Изображение галереи">
           </a>
         </li>
         <li class="gallery__item mix category-profi">
-          <a class="gallery__link outline__color--primary" href="images/gallery/3.jpg" data-fancybox="images">
+          <a class="gallery__link" href="images/gallery/3.jpg" data-fancybox="images">
             <img class="gallery__image" src="images/gallery/3.jpg" alt="Изображение галереи">
           </a>
         </li>
         <li class="gallery__item mix category-tourist">
-          <a class="gallery__link outline__color--primary" href="images/gallery/4.jpg" data-fancybox="images">
+          <a class="gallery__link" href="images/gallery/4.jpg" data-fancybox="images">
             <img class="gallery__image" src="images/gallery/4.jpg" alt="Изображение галереи">
           </a>
         </li>
         <li class="gallery__item mix category-nature">
-          <a class="gallery__link outline__color--primary" href="images/gallery/5.jpg" data-fancybox="images">
+          <a class="gallery__link" href="images/gallery/5.jpg" data-fancybox="images">
             <img class="gallery__image" src="images/gallery/5.jpg" alt="Изображение галереи">
           </a>
         </li>
         <li class="gallery__item mix category-tourist">
-          <a class="gallery__link outline__color--primary" href="images/gallery/6.jpg" data-fancybox="images">
+          <a class="gallery__link" href="images/gallery/6.jpg" data-fancybox="images">
             <img class="gallery__image" src="images/gallery/6.jpg" alt="Изображение галереи">
           </a>
         </li>
@@ -270,15 +271,15 @@
       <button class="show-more__btn button" type="button">Показать еще</button>
     </div>
 
-    <blockquote class="blockquote bg__color--gray">
+    <blockquote class="blockquote">
       <div class="container">
         «Если сомневаешься – иди катайся.»
-        <cite class="author">Нэт Янг, первый Чемпион Мира по сёрфингу</cite>
+        <cite class="blockquote__author">Нэт Янг, первый Чемпион Мира по сёрфингу</cite>
       </div>
     </blockquote>
 
     <div class="container">
-      <a class="video__link outline__color--primary" style="background-image: url('images/video-bg.jpg');" data-fancybox
+      <a class="video__link" style="background-image: url('images/video-bg.jpg');" data-fancybox
         href="https://www.youtube.com/watch?v=LFDaKUHgK7E">
         <span class="sr-only">Иконка запуска на просмотр видеоролика о серфинге</span>
         <svg class="play-icon" width="75" height="88" viewBox="0 0 75 88" fill="#373A39"
@@ -311,96 +312,135 @@
   <section class="blog">
     <h2 class="title blog__title">Блог</h2>
 
-    <!-- стоило ли делать списком? -->
-    <ul class="blog__slider" style="background-image: url('images/slider-bg.jpg')">
-      <li class="slider__item">
-        <a class="slider__link outline__color--primary" href="#">
-          <h2 class="slider__heading">Что необходимо взять с собой на серф тур</h2>
-        </a>
-        <p class="slider__description">
-          ТОП 20 необходимых вещей для комфортного отдыха и обучения
-        </p>
+    <ul class="blog__slider">
+      <li class="slider__item" style="background-image: url('images/slider-bg.jpg')">
+        <div class="container">
+          <a class="slider__link" href="#">
+            <h3 class="slider__heading">Что необходимо взять с собой на серф тур</h3>
+          </a>
+          <div class="slider__description">
+            <p>
+              ТОП 20 необходимых вещей для комфортного отдыха и обучения
+            </p>
+          </div>
+        </div>
       </li>
 
-      <li class="slider__item">
-        <a class="slider__link outline__color--primary" href="#">
-          <h2 class="slider__heading">Что необходимо взять с собой на серф тур</h2>
-        </a>
-        <p class="slider__description">
-          ТОП 20 необходимых вещей для комфортного отдыха и обучения
-        </p>
+      <li class="slider__item" style="background-image: url('images/slider-bg.jpg')">
+        <div class="container">
+          <a class="slider__link" href="#">
+            <h3 class="slider__heading">Что необходимо взять с собой на серф тур</h3>
+          </a>
+          <div class="slider__description">
+            <p>
+              ТОП 20 необходимых вещей для комфортного отдыха и обучения
+            </p>
+          </div>
+        </div>
       </li>
 
-      <li class="slider__item">
-        <a class="slider__link outline__color--primary" href="#">
-          <h2 class="slider__heading">Что необходимо взять с собой на серф тур</h2>
-        </a>
-        <p class="slider__description">
-          ТОП 20 необходимых вещей для комфортного отдыха и обучения
-        </p>
+      <li class="slider__item" style="background-image: url('images/slider-bg.jpg')">
+        <div class="container">
+          <a class="slider__link" href="#">
+            <h3 class="slider__heading">Что необходимо взять с собой на серф тур</h3>
+          </a>
+          <div class="slider__description">
+            <p>
+              ТОП 20 необходимых вещей для комфортного отдыха и обучения
+            </p>
+          </div>
+        </div>
       </li>
 
-      <li class="slider__item">
-        <a class="slider__link outline__color--primary" href="#">
-          <h2 class="slider__heading">Что необходимо взять с собой на серф тур</h2>
-        </a>
-        <p class="slider__description">
-          ТОП 20 необходимых вещей для комфортного отдыха и обучения
-        </p>
+      <li class="slider__item" style="background-image: url('images/slider-bg.jpg')">
+        <div class="container">
+          <a class="slider__link" href="#">
+            <h3 class="slider__heading">Что необходимо взять с собой на серф тур</h3>
+          </a>
+          <div class="slider__description">
+            <p>
+              ТОП 20 необходимых вещей для комфортного отдыха и обучения
+            </p>
+          </div>
+        </div>
       </li>
 
-      <li class="slider__item">
-        <a class="slider__link outline__color--primary" href="#">
-          <h2 class="slider__heading">Что необходимо взять с собой на серф тур</h2>
-        </a>
-        <p class="slider__description">
-          ТОП 20 необходимых вещей для комфортного отдыха и обучения
-        </p>
+      <li class="slider__item" style="background-image: url('images/slider-bg.jpg')">
+        <div class="container">
+          <a class="slider__link" href="#">
+            <h3 class="slider__heading">Что необходимо взять с собой на серф тур</h3>
+          </a>
+          <div class="slider__description">
+            <p>
+              ТОП 20 необходимых вещей для комфортного отдыха и обучения
+            </p>
+          </div>
+        </div>
       </li>
 
-      <li class="slider__item">
-        <a class="slider__link outline__color--primary" href="#">
-          <h2 class="slider__heading">Что необходимо взять с собой на серф тур</h2>
-        </a>
-        <p class="slider__description">
-          ТОП 20 необходимых вещей для комфортного отдыха и обучения
-        </p>
+      <li class="slider__item" style="background-image: url('images/slider-bg.jpg')">
+        <div class="container">
+          <a class="slider__link" href="#">
+            <h3 class="slider__heading">Что необходимо взять с собой на серф тур</h3>
+          </a>
+          <div class="slider__description">
+            <p>
+              ТОП 20 необходимых вещей для комфортного отдыха и обучения
+            </p>
+          </div>
+        </div>
       </li>
 
-      <li class="slider__item">
-        <a class="slider__link outline__color--primary" href="#">
-          <h2 class="slider__heading">Что необходимо взять с собой на серф тур</h2>
-        </a>
-        <p class="slider__description">
-          ТОП 20 необходимых вещей для комфортного отдыха и обучения
-        </p>
+      <li class="slider__item" style="background-image: url('images/slider-bg.jpg')">
+        <div class="container">
+          <a class="slider__link" href="#">
+            <h3 class="slider__heading">Что необходимо взять с собой на серф тур</h3>
+          </a>
+          <div class="slider__description">
+            <p>
+              ТОП 20 необходимых вещей для комфортного отдыха и обучения
+            </p>
+          </div>
+        </div>
       </li>
 
-      <li class="slider__item">
-        <a class="slider__link outline__color--primary" href="#">
-          <h2 class="slider__heading">Что необходимо взять с собой на серф тур</h2>
-        </a>
-        <p class="slider__description">
-          ТОП 20 необходимых вещей для комфортного отдыха и обучения
-        </p>
+      <li class="slider__item" style="background-image: url('images/slider-bg.jpg')">
+        <div class="container">
+          <a class="slider__link" href="#">
+            <h3 class="slider__heading">Что необходимо взять с собой на серф тур</h3>
+          </a>
+          <div class="slider__description">
+            <p>
+              ТОП 20 необходимых вещей для комфортного отдыха и обучения
+            </p>
+          </div>
+        </div>
       </li>
 
-      <li class="slider__item">
-        <a class="slider__link outline__color--primary" href="#">
-          <h2 class="slider__heading">Что необходимо взять с собой на серф тур</h2>
-        </a>
-        <p class="slider__description">
-          ТОП 20 необходимых вещей для комфортного отдыха и обучения
-        </p>
+      <li class="slider__item" style="background-image: url('images/slider-bg.jpg')">
+        <div class="container">
+          <a class="slider__link" href="#">
+            <h3 class="slider__heading">Что необходимо взять с собой на серф тур</h3>
+          </a>
+          <div class="slider__description">
+            <p>
+              ТОП 20 необходимых вещей для комфортного отдыха и обучения
+            </p>
+          </div>
+        </div>
       </li>
 
-      <li class="slider__item">
-        <a class="slider__link outline__color--primary" href="#">
-          <h2 class="slider__heading">Что необходимо взять с собой на серф тур</h2>
-        </a>
-        <p class="slider__description">
-          ТОП 20 необходимых вещей для комфортного отдыха и обучения
-        </p>
+      <li class="slider__item" style="background-image: url('images/slider-bg.jpg')">
+        <div class="container">
+          <a class="slider__link" href="#">
+            <h3 class="slider__heading">Что необходимо взять с собой на серф тур</h3>
+          </a>
+          <div class="slider__description">
+            <p>
+              ТОП 20 необходимых вещей для комфортного отдыха и обучения
+            </p>
+          </div>
+        </div>
       </li>
     </ul>
   </section>
@@ -411,6 +451,7 @@
       <ul class="team__images">
         <li class="team__item">
           <img class="team__image" src="images/team/1.jpg" alt="Фотография Майка">
+          <!-- h3 to span -->
           <h3 class="team__name">Mike</h3>
           <p class="team__position">Главный инструктор</p>
         </li>
@@ -428,12 +469,13 @@
     </div>
   </section>
 
-  <section class="tarrifs bg__color--gray">
+  <section class="tarrifs">
     <div class="container">
       <h2 class="title tarrifs__title">Пакеты услуг</h2>
       <ul class="tariffs__list">
         <li class="tarrif__item">
           <ul class="service__list">
+            <!-- вытащить в h3 во всех элементах из списка, стоимость тоже, $ обернуть в span -->
             <li class="service__item">Стандарт</li>
             <li class="service__item">Проживание на вилле 6 ночей</li>
             <li class="service__item">Номер категории стандарт</li>
@@ -477,6 +519,7 @@
   </section>
 
   <div class="map">
+    <!-- to img -->
     <div class="map__content" style="background-image: url('images/map.jpg');"></div>
   </div>
 
@@ -484,27 +527,35 @@
     <div class="container">
       <h2 class="title feedback__title">Оставить заявку</h2>
       <div class="feedback__wrapper">
+        <!-- form -->
         <form class="feedback__form">
-          <input class="input outline__color--primary" type="text" placeholder="Имя">
-          <input class="input outline__color--primary" type="text" placeholder="Телефон">
-          <textarea class="textarea outline__color--primary" placeholder="Оставьте сообщение, и мы свяжемся с Вами в ближайшее время"></textarea>
+          <!-- form__input form__name -->
+          <input class="input" type="text" placeholder="Имя">
+          <input class="input" type="text" placeholder="Телефон">
+          <textarea class="textarea"
+            placeholder="Оставьте сообщение, и мы свяжемся с Вами в ближайшее время"></textarea>
           <button class="button" type="submit">Отправить</button>
         </form>
+        <!-- уйти от списка, address, liзаменить на div -->
         <ul class="feedback__contacts">
+          <!-- feedback__item -->
           <li class="feedback__contact-item">
+            <!-- feedback__text -->
             <p class="feedback__contact-text">Есть вопрос?</p>
             <p class="feedback__contact-text">Вы можете связаться с нами:</p>
           </li>
           <li class="feedback__contact-item">
-            <a href="tel:+34674863788" class="feedback__phone-link outline__color--primary">
+            <!-- feedback__phone-link сократить -->
+            <a href="tel:+34674863788" class="feedback__phone-link">
               <p>WhatsApp, Viber, Telegram</p>
+              <!-- a -->
               <p>+3 467 486-37-88</p>
             </a>
           </li>
           <li class="feedback__contact-item">
             <address class="address">
-              Avenida grandes playas 79, 
-              Corralejo la Oliva Fuerteventura, 
+              Avenida grandes playas 79,
+              Corralejo la Oliva Fuerteventura,
               Spain. 35660
             </address>
           </li>
@@ -516,19 +567,20 @@
   <div class="social-media">
     <ul class="social-media__list">
       <li class="social-media__item">
-        <a class="social__media-link outline__color--primary" href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a class="social__media-link" href="https://www.instagram.com/" target="_blank">Instagram</a>
       </li>
       <li class="social-media__item">
-        <a class="social__media-link outline__color--primary" href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <!-- error social__media -->
+        <a class="social__media-link" href="https://www.facebook.com/" target="_blank">Facebook</a>
       </li>
       <li class="social-media__item">
-        <a class="social__media-link outline__color--primary" href="https://www.youtube.com/" target="_blank">Youtube</a>
+        <a class="social__media-link" href="https://www.youtube.com/" target="_blank">Youtube</a>
       </li>
     </ul>
   </div>
 
   <footer class="footer">
-    <a class="logo outline__color--secondary" href="#">
+    <a class="logo" href="#">
       <img class="logo__img" src="images/logo.svg" alt="Логотип">
     </a>
   </footer>
