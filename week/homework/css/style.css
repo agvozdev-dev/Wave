@@ -1,3 +1,17 @@
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
 body {
   color: #242121;
   font-family: 'Roboto Condensed', Verdana, Geneva, Tahoma, sans-serif;
@@ -16,11 +30,10 @@ a {
 button {
   font-size: 24px;
   line-height: 1.3;
-  /* check inherit and color*/
-  letter-spacing: 0.7px;
+  letter-spacing: inherit;
   text-transform: uppercase;
   border: none;
-  color: #242121;
+  color: inherit;
   background-color: transparent;
   font-weight: 400;
   padding: 0;
@@ -233,19 +246,7 @@ button {
   position: relative;
 }
 
-/* попрбовать */
-/* .benefits__heading::before {
-  content: '';
-  position: absolute;
-  height: 50px;
-  width: 55px;
-  background-repeat: no-repeat;
-  left: -20px;
-} */
-
-.benefits__heading--icon1::before,
-.benefits__heading--icon2::before,
-.benefits__heading--icon3::before {
+.benefits__heading::before {
   content: '';
   position: absolute;
   height: 50px;
@@ -275,13 +276,16 @@ button {
   justify-content: space-between;
 }
 
+.statistic__content {
+  position: relative;
+}
+
 .statistic__content,
 .statistic__text {
   flex-basis: 50%;
 }
 
-/* могут быть добавлены другие параграфы */
-.statistic__text p:first-child {
+.statistic__text p:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -320,10 +324,7 @@ button {
   left: calc(293px + 10px);
 }
 
-/* сократить запись */
-.statistic__item--icon1::before,
-.statistic__item--icon2::before,
-.statistic__item--icon3::before {
+.statistic__item::before {
   content: '';
   background-repeat: no-repeat;
   position: absolute;
@@ -371,16 +372,14 @@ button {
   background-size: 50% 100%;
 }
 
-/* разобраться с max-width, может не нужен */
-.reach-top__title {
-  margin-bottom: 100px;
-  max-width: 860px;
-  text-align: right;
-}
-
-/* разобраться с max-width, может не нужен */
+.reach-top__title,
 .reach-top__text {
   max-width: 860px;
+}
+
+.reach-top__title {
+  margin-bottom: 100px;
+  text-align: right;
 }
 
 .reach-top__text p {
@@ -389,7 +388,7 @@ button {
 }
 
 /* можно ли написать проще? */
-.reach-top__text p:not(:nth-child(-n+1)) {
+.reach-top__text p/*:not(:nth-child(-n+1))*/ {
   margin-bottom: 30px;
 }
 
@@ -441,8 +440,7 @@ button {
 }
 
 .gallery__link img:hover {
-  /* писать с 0 */
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .mixitup-control-active {
@@ -833,25 +831,6 @@ address {
 }
 /* ====== END FOOTER ======*/
 
-/* ======= FOR SCREEN READERS ======= */
-/* вынести в начало */
-.sr-only {
-  border: 0 !important;
-  clip: rect(1px, 1px, 1px, 1px) !important;
-  -webkit-clip-path: inset(50%) !important;
-  clip-path: inset(50%) !important;
-  height: 1px !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  padding: 0 !important;
-  position: absolute !important;
-  width: 1px !important;
-  white-space: nowrap !important;
-}
-
-/* ======= END FOR SCREEN READERS ======= */
-
-/* outline в reset */
 /* dots подсвечивать при наведении
     чеоная линия у заднего фона слайдера
  */
