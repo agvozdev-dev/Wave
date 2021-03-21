@@ -53,3 +53,7 @@ select {
 body {
   min-height: 100vh;
 }
+
+address {
+  font-style: normal;
+}

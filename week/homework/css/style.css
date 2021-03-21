@@ -53,6 +53,22 @@ button {
   padding: 0 15px;
 }
 
+.button {
+  border: 1px solid #C4C4C4;
+  padding: 19px 0;
+  transition: background-color .3s, color .3s;
+  max-width: 350px;
+}
+
+.button:hover {
+  background-color: #00B2A0;
+  color: #fff;
+}
+
+.button:active {
+  background-color: #029283;
+}
+
 .benefits,
 .blockquote,
 .tarrifs {
@@ -175,8 +191,7 @@ button {
   height: 69px;
   position: absolute;
   top: 77px;
-  /* поискать другой способ */
-  left: calc(50% - 10px);
+  transform: translateX(-50%);
 }
 
 /* ======= END HEADER ======= */
@@ -278,6 +293,7 @@ button {
 
 .statistic__content {
   position: relative;
+  max-width: 350px;
 }
 
 .statistic__content,
@@ -313,15 +329,15 @@ button {
 }
 
 .percent-1 {
-  left: calc(200px + 10px);
+  right: 100px;
 }
 
 .percent-2 {
-  left: calc(247px + 10px);
+  right: 50px;
 }
 
 .percent-3 {
-  left: calc(293px + 10px);
+  right: 5px;
 }
 
 .statistic__item::before {
@@ -384,12 +400,7 @@ button {
 
 .reach-top__text p {
   max-width: 510px;
-  margin: 0 0 0 auto;
-}
-
-/* можно ли написать проще? */
-.reach-top__text p/*:not(:nth-child(-n+1))*/ {
-  margin-bottom: 30px;
+  margin: 0 0 30px auto;
 }
 
 /* ======= END TOP ======= */
@@ -449,24 +460,10 @@ button {
 
 .show-more__btn {
   margin-bottom: 200px;
-}
-
-/* вынести в начало */
-.button {
-  border: 1px solid #C4C4C4;
-  padding: 19px 91px;
-  transition: background-color .3s, color .3s;
-  /* max-width??? */
-  width: 350px;
-}
-
-.button:hover {
-  background-color: #00B2A0;
-  color: #fff;
-}
-
-.button:active {
-  background-color: #029283;
+  /*дополняют padding класса .button, 
+  у кнопок разная ширина из-за разного текста */
+  padding-left: 91px;
+  padding-right: 91px;
 }
 
 .blockquote {
@@ -739,11 +736,6 @@ button {
   margin-bottom: 65px;
 }
 
-/* вынести в reset */
-address {
-  font-style: normal;
-}
-
 .feedback__form,
 .feedback__contacts {
   max-width: 600px;
@@ -795,6 +787,11 @@ address {
   resize: none;
   min-height: 155px;
   margin-bottom: 75px;
+}
+
+.feedback__button {
+  padding-left: 111px;
+  padding-right: 111px;
 }
 /* ====== END FEEDBACK ======*/
 
