@@ -540,39 +540,28 @@
     <div class="container">
       <h2 class="title feedback__title">Оставить заявку</h2>
       <div class="feedback__wrapper">
-        <!-- form -->
-        <form class="feedback__form">
-          <!-- form__input form__name -->
-          <input class="input" type="text" placeholder="Имя">
-          <input class="input" type="text" placeholder="Телефон">
+        <form class="form feedback__form">
+          <input class="form__input form__name" type="text" placeholder="Имя">
+          <input class="form__input form__phone" type="text" placeholder="Телефон">
           <textarea class="textarea"
             placeholder="Оставьте сообщение, и мы свяжемся с Вами в ближайшее время"></textarea>
           <button class="button feedback__button" type="submit">Отправить</button>
         </form>
-        <!-- уйти от списка, address, liзаменить на div -->
-        <ul class="feedback__contacts">
-          <!-- feedback__item -->
-          <li class="feedback__contact-item">
-            <!-- feedback__text -->
-            <p class="feedback__contact-text">Есть вопрос?</p>
-            <p class="feedback__contact-text">Вы можете связаться с нами:</p>
-          </li>
-          <li class="feedback__contact-item">
-            <!-- feedback__phone-link сократить -->
-            <a href="tel:+34674863788" class="feedback__phone-link">
-              <p>WhatsApp, Viber, Telegram</p>
-              <!-- a -->
-              <p>+3 467 486-37-88</p>
-            </a>
-          </li>
-          <li class="feedback__contact-item">
-            <address class="address">
-              Avenida grandes playas 79,
-              Corralejo la Oliva Fuerteventura,
-              Spain. 35660
-            </address>
-          </li>
-        </ul>
+        <address class="feedback__address">
+          <div class="feedback__item">
+            <p class="feedback__text">Есть вопрос?</p>
+            <p class="feedback__text">Вы можете связаться с нами:</p>
+          </div>
+          <div class="feedback__item">
+            <p>WhatsApp, Viber, Telegram</p>
+            <a href="tel:+34674863788">+3 467 486-37-88</a>
+          </div>
+          <div class="feedback__item">
+            <p>
+              Avenida grandes playas 79, Corralejo la Oliva Fuerteventura, Spain. 35660
+            </p>
+          </div>
+        </address>
       </div>
     </div>
   </section>
