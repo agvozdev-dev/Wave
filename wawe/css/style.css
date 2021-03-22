@@ -14,7 +14,7 @@
 
 body {
   color: #242121;
-  font-family: 'Roboto Condensed', Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 1.3;
@@ -76,7 +76,7 @@ button {
 }
 
 .title {
-  font-family: 'Raleway', Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   text-transform: uppercase;
   font-size: 48px;
   line-height: 1.2;
@@ -94,9 +94,65 @@ button {
 }
 
 /* ======= HEADER ======= */
+.menu__btn {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.menu__btn span,
+.menu__btn span::before,
+.menu__btn span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.menu__btn span::before,
+.menu__btn span::after {
+  content: '';
+}
+
+.menu__btn span::before {
+  top: -8px;
+}
+.menu__btn span::after {
+  top: 8px;
+}
 
 .logo {
   outline-color: #fff;
+}
+
+.header__top.header__top--active .logo {
+  z-index: 3;
+}
+
+.header__top.header__top--active .menu__list {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #174444;
+  z-index: 2;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.header__top.header__top--active .menu__item {
+  margin-left: 0;
+}
+
+.header__top.header__top--active .menu__item:not(:last-child) {
+  padding-bottom: 15px;
 }
 
 .header {
@@ -125,7 +181,6 @@ button {
   font-weight: 400;
   font-size: 24px;
   padding-bottom: 5px;
-  
 }
 
 .menu__item:not(:first-child) {
@@ -165,7 +220,7 @@ button {
 .header__name {
   text-transform: uppercase;
   color: #0D302C;
-  font-family: 'Raleway', Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-weight: 700;
   line-height: 1.2;
   font-size: 200px;
@@ -174,7 +229,7 @@ button {
 
 .header__name p {
   text-transform: none;
-  font-family: 'Roboto Condensed', Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
   font-size: 24px;
   font-weight: 400;
   color: #000000;
@@ -834,3 +889,39 @@ button {
   margin: 0 auto;
 }
 /* ====== END FOOTER ======*/
+
+/* ====== MEDIA ======*/
+@media (max-width: 1024px) {
+  .menu {
+    margin-left: auto;
+  }
+
+  .menu__btn {
+    display: block;
+  }
+
+  .menu__list {
+    display: none;
+  }
+}
+
+@media (max-width: 769px) {
+  .header__name {
+    font-size: 145px;
+  }
+
+  .header__name p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 512px) {
+  .header__name {
+    font-size: 90px;
+  }
+
+  .header__icon::before {
+    display: none;
+  }
+}
+/* ====== END MEDIA ======*/

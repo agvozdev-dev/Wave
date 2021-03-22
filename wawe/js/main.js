@@ -1,6 +1,4 @@
 $(function () {
-  mixitup('.gallery__images');
-
   $('[data-fancybox="images"]').fancybox({
     buttons: [
       "close"
@@ -11,4 +9,10 @@ $(function () {
     dots: true,
     arrows: false,
   });
+
+  $('.menu__btn').on('click', function () {
+    $('.header__top').toggleClass('header__top--active')
+  })
+
+  mixitup('.gallery__images');
 })
