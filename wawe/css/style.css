@@ -891,6 +891,30 @@ button {
 /* ====== END FOOTER ======*/
 
 /* ====== MEDIA ======*/
+@media (max-width: 1160px) {
+  .about {
+    padding: 50px 0;
+  }
+
+  .about__title {
+    margin-bottom: 50px;
+  }
+
+  .about__text p,
+  .about__text p:nth-child(odd) {
+    margin-right: 0;
+  }
+
+  .about__text p {
+    max-width: 100%;
+    min-height: auto;
+  }
+
+  .about__text p:not(:nth-last-child(-n+2)) {
+    min-height: auto;
+  }
+}
+
 @media (max-width: 1024px) {
   .menu {
     margin-left: auto;
@@ -905,6 +929,17 @@ button {
   }
 }
 
+@media (max-width: 992px) {
+  .title {
+    font-size: 32px;
+    padding: 0 20px;
+  }
+
+  .title::after {
+    font-size: 50px;
+  }
+}
+
 @media (max-width: 769px) {
   .header__name {
     font-size: 145px;
@@ -915,13 +950,14 @@ button {
   }
 }
 
-@media (max-width: 512px) {
+@media (max-width: 540px) {
   .header__name {
-    font-size: 90px;
+    font-size: 80px;
   }
 
   .header__icon::before {
     display: none;
   }
 }
+
 /* ====== END MEDIA ======*/
