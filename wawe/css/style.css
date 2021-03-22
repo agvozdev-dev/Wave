@@ -338,7 +338,8 @@ button {
 }
 
 .benefits__text {
-  margin-top: 10px;
+  max-width: 550px;
+  margin: 10px auto 0;
 }
 
 .statistic {
@@ -892,12 +893,14 @@ button {
 
 /* ====== MEDIA ======*/
 @media (max-width: 1160px) {
-  .about {
+  .about,
+  .benefits {
     padding: 50px 0;
   }
 
-  .about__title {
-    margin-bottom: 50px;
+  .about__title,
+  .benefits__title {
+    margin-bottom: 80px;
   }
 
   .about__text p,
@@ -912,6 +915,55 @@ button {
 
   .about__text p:not(:nth-last-child(-n+2)) {
     min-height: auto;
+  }
+
+  .benefits__list {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .benefits__item {
+    max-width: none;
+    margin-bottom: 70px;
+  }
+
+  .benefits__heading {
+    max-width: none;
+  }
+
+  .benefits__heading::before {
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .statistic {
+    display: block;
+    text-align: center;
+  }
+
+  .statistic__content {
+    max-width: none;
+    margin-bottom: 30px;
+  }
+
+  .statistic__item::before {
+    transform: translateX(-50%);
+  }
+  
+  .percent-1,
+  .percent-2,
+  .percent-3 {
+    right: auto;
+    top: -25px;
+  }
+
+  .statistic__item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .statistic__text {
+    text-align: left;
   }
 }
 
