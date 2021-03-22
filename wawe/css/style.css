@@ -91,6 +91,7 @@ button {
   content: '/';
   color: #00B2A0;
   font-size: 72px;
+  z-index: 1;
 }
 
 /* ======= HEADER ======= */
@@ -892,14 +893,42 @@ button {
 /* ====== END FOOTER ======*/
 
 /* ====== MEDIA ======*/
+@media (max-width: 1830px) {
+  .reach-top__bg {
+    background-image: none !important;
+  }
+
+  .reach-top__wrapper,
+  .reach-top__title,
+  .reach-top__text {
+    max-width: none;
+  }  
+
+  .reach-top__text p {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .reach-top__text p:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  .reach-top__title,
+  .reach-top__text {
+    text-align: center;
+  }
+}
+
 @media (max-width: 1160px) {
   .about,
-  .benefits {
+  .benefits,
+  .reach-top {
     padding: 50px 0;
   }
 
   .about__title,
-  .benefits__title {
+  .benefits__title,
+  .reach-top__title {
     margin-bottom: 80px;
   }
 
