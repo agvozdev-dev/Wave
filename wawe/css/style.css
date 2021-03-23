@@ -90,7 +90,7 @@ button {
   position: absolute;
   content: '/';
   color: #00B2A0;
-  font-size: 72px;
+  font-size: 1.5em;
   z-index: 1;
 }
 
@@ -118,6 +118,7 @@ button {
 .menu__btn span::before,
 .menu__btn span::after {
   content: '';
+  transform-origin: 0% 0%;
 }
 
 .menu__btn span::before {
@@ -125,6 +126,21 @@ button {
 }
 .menu__btn span::after {
   top: 8px;
+  transform-origin: 0% 100%;
+}
+
+.menu__btn--active span {
+  width: 0;
+}
+
+.menu__btn--active span::before {
+  width: 30px;
+  transform: rotate(45deg) translate(2px, -7px);
+}
+
+.menu__btn--active span::after {
+  width: 30px;
+  transform: rotate(-45deg) translate(4px, 4px);
 }
 
 .logo {
@@ -425,6 +441,50 @@ button {
 /* ======= TOP ======= */
 
 .reach-top {
+  display: flex;
+  padding-bottom: 200px;
+}
+
+.reach-top__bg {
+  flex-basis: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.reach-top__wrapper {
+  padding-bottom: 115px;
+}
+
+.reach-top__wrapper,
+.reach-top__bg {
+  flex-basis: 50%;
+}
+
+.reach-top__title {
+  max-width: 910px;
+  padding-right: 50px;
+}
+
+.reach-top__text {
+  max-width: 910px;
+  padding-right: 50px;
+}
+
+.reach-top__title {
+  padding-top: 199px;
+  /* padding-right: 50px; */
+  margin-bottom: 100px;
+  text-align: right;
+}
+
+.reach-top__text p {
+  max-width: 510px;
+  margin: 0 0 30px auto;
+}
+
+
+/* .reach-top {
   padding-bottom: 314px;
   padding-top: 199px;
   position: relative;
@@ -451,6 +511,7 @@ button {
 }
 
 .reach-top__title {
+  padding-right: 50px;
   margin-bottom: 100px;
   text-align: right;
 }
@@ -458,7 +519,7 @@ button {
 .reach-top__text p {
   max-width: 510px;
   margin: 0 0 30px auto;
-}
+} */
 
 /* ======= END TOP ======= */
 
@@ -517,8 +578,6 @@ button {
 
 .show-more__btn {
   margin-bottom: 200px;
-  /*дополняют padding класса .button, 
-  у кнопок разная ширина из-за разного текста */
   padding-left: 91px;
   padding-right: 91px;
 }
@@ -609,14 +668,14 @@ button {
   background-size: cover;
 }
 
-.slider__heading,
-.slider__description {
+.slider-serf__heading,
+.slider-serf__description {
   margin-right: 15px;
   margin-left: auto;
   max-width: 585px;
 }
 
-.slider__heading {
+.slider-serf__heading {
   text-transform: uppercase;
   font-size: 48px;
   line-height: 1.2;
@@ -854,8 +913,15 @@ button {
 }
 
 .feedback__button {
-  padding-left: 111px;
-  padding-right: 111px;
+  padding: 0 111px;
+}
+
+.feedback__phone:hover {
+  color: #00B2A0;
+}
+
+.feedback__phone {
+  transition: color 0.3s;
 }
 /* ====== END FEEDBACK ======*/
 
@@ -876,6 +942,10 @@ button {
   margin-left: 15px;
 }
 
+.social-media__link {
+  transition: color 0.3s;
+}
+
 .social-media__link:hover {
   color: #00B2A0;
 }
@@ -892,34 +962,38 @@ button {
 }
 /* ====== END FOOTER ======*/
 
+
+
 /* ====== MEDIA ======*/
-@media (max-width: 1830px) {
+@media (max-width: 1199.98px) {
+  .menu {
+    margin: 0 auto;
+  }
+
+  .reach-top {
+    display: block;
+  }
+
   .reach-top__bg {
-    background-image: none !important;
+    display: none;  
+  }
+
+  .reach-top__title {
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .reach-top__text {
+    padding: 0 15px;
   }
 
   .reach-top__wrapper,
   .reach-top__title,
-  .reach-top__text {
+  .reach-top__text,
+  .reach-top__text p {
     max-width: none;
   }  
 
-  .reach-top__text p {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .reach-top__text p:not(:last-child) {
-    margin-bottom: 20px;
-  }
-  
-  .reach-top__title,
-  .reach-top__text {
-    text-align: center;
-  }
-}
-
-@media (max-width: 1160px) {
   .about,
   .benefits,
   .reach-top {
@@ -929,7 +1003,7 @@ button {
   .about__title,
   .benefits__title,
   .reach-top__title {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 
   .about__text p,
@@ -953,7 +1027,11 @@ button {
 
   .benefits__item {
     max-width: none;
-    margin-bottom: 70px;
+    margin-bottom: 90px;
+  }
+
+  .benefits__item:first-child {
+    padding-top: 40px;
   }
 
   .benefits__heading {
@@ -996,7 +1074,20 @@ button {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 991.98px) {
+  .menu {
+    margin-right: 0;
+  }
+
+  .menu__link {
+    display: block;
+  }
+
+  .title {
+    font-size: 32px;
+    padding: 0 20px;
+  }
+
   .menu {
     margin-left: auto;
   }
@@ -1007,21 +1098,11 @@ button {
 
   .menu__list {
     display: none;
+    overflow: scroll; /* ????????????????????????????? */
   }
 }
 
-@media (max-width: 992px) {
-  .title {
-    font-size: 32px;
-    padding: 0 20px;
-  }
-
-  .title::after {
-    font-size: 50px;
-  }
-}
-
-@media (max-width: 769px) {
+@media (max-width: 767.98px) {
   .header__name {
     font-size: 145px;
   }
@@ -1031,7 +1112,7 @@ button {
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 575.98px) {
   .header__name {
     font-size: 80px;
   }
@@ -1042,3 +1123,10 @@ button {
 }
 
 /* ====== END MEDIA ======*/
+
+/*
+сделать крестик
+плавное появление меню в аддаптиве
+
+иконка - вернуть
+*/
