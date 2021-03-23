@@ -964,7 +964,8 @@ button {
   .reach-top,
   .gallery,
   .blog,
-  .team {
+  .team,
+  .tarrifs {
     padding: 50px 0;
   }
 
@@ -972,7 +973,8 @@ button {
   .benefits__title,
   .reach-top__title,
   .gallery__title,
-  .blog__title {
+  .blog__title,
+  .tarrifs__title {
     margin-bottom: 60px;
   }
 
@@ -1079,6 +1081,19 @@ button {
   .slider-serf__heading {
     font-size: 30px;
   }
+
+  .tariffs__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarrif__item {
+    margin-bottom: 30px;
+  }
+
+  .tarrif__item:not(:first-child) {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -1133,6 +1148,10 @@ button {
 
   .numbers__item:not(:first-child) {
     margin-left: 0;
+  }
+
+  .map {
+    padding: 50px 0;
   }
 }
 
