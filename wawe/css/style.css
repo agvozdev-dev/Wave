@@ -978,6 +978,10 @@ button {
     margin-bottom: 60px;
   }
 
+  .show-more__btn {
+    margin-bottom: 50px;
+  }
+
   .about__text p,
   .about__text p:nth-child(odd) {
     margin-right: 0;
@@ -1105,6 +1109,10 @@ button {
 
   .filter__btn {
     font-size: 20px;
+  }
+
+  .blockquote {
+    font-size: 24px;
   }
 
   button {
