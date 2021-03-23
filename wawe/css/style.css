@@ -943,11 +943,6 @@ button {
     padding-bottom: 0;
   }
 
-  /* .reach-top__title,
-  .gallery {
-    
-  } */
-
   .reach-top__title {
     text-align: center;
     padding-top: 0;
@@ -980,6 +975,10 @@ button {
 
   .show-more__btn {
     margin-bottom: 50px;
+  }
+
+  .video__link {
+    margin: 20px 0;
   }
 
   .about__text p,
@@ -1089,6 +1088,19 @@ button {
 
   .header__top--active .menu__list {
     display: block;
+  }
+
+  .numbers {
+    flex-direction: column;
+  }
+
+  .numbers__item {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .numbers__item:not(:first-child) {
+    margin-left: 0;
   }
 }
 
