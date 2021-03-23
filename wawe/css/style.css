@@ -962,15 +962,22 @@ button {
   .about,
   .benefits,
   .reach-top,
-  .gallery {
+  .gallery,
+  .blog,
+  .team {
     padding: 50px 0;
   }
 
   .about__title,
   .benefits__title,
   .reach-top__title,
-  .gallery__title {
+  .gallery__title,
+  .blog__title {
     margin-bottom: 60px;
+  }
+
+  .blog {
+    margin-bottom: 0;
   }
 
   .show-more__btn {
@@ -1046,6 +1053,31 @@ button {
 
   .statistic__text {
     text-align: left;
+  }
+
+  .numbers {
+    padding-bottom: 0;
+  }
+
+  .team__images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team__item {
+    margin-bottom: 40px;
+  }
+
+  .team__title {
+    margin-bottom: 50px;
+  }
+
+  .slider__item {
+    background-position-x: center;
+  }
+
+  .slider-serf__heading {
+    font-size: 30px;
   }
 }
 
