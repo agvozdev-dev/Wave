@@ -129,26 +129,22 @@ button {
   transform-origin: 0% 100%;
 }
 
-.menu__btn--active span {
+.header__top--active span {
   width: 0;
 }
 
-.menu__btn--active span::before {
+.header__top--active span::before {
   width: 30px;
   transform: rotate(45deg) translate(2px, -7px);
 }
 
-.menu__btn--active span::after {
+.header__top--active span::after {
   width: 30px;
   transform: rotate(-45deg) translate(4px, 4px);
 }
 
 .logo {
   outline-color: #fff;
-}
-
-.header__top.header__top--active .logo {
-  z-index: 3;
 }
 
 .header__top.header__top--active .menu__list {
@@ -192,6 +188,7 @@ button {
 .menu__list {
   display: flex;
   justify-content: center;
+  transition: all 0.5s;
 }
 
 .menu__item {
@@ -259,6 +256,7 @@ button {
 .header__icon::before {
   content: '';
   background-image: url('../images/board-icon.svg');
+  background-size: cover;
   width: 20px;
   height: 69px;
   position: absolute;
@@ -483,50 +481,13 @@ button {
   margin: 0 0 30px auto;
 }
 
-
-/* .reach-top {
-  padding-bottom: 314px;
-  padding-top: 199px;
-  position: relative;
-}
-
-.reach-top__wrapper {
-  max-width: 50%;
-}
-
-.reach-top__bg {
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 200px;
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-size: 50% 100%;
-}
-
-.reach-top__title,
-.reach-top__text {
-  max-width: 860px;
-}
-
-.reach-top__title {
-  padding-right: 50px;
-  margin-bottom: 100px;
-  text-align: right;
-}
-
-.reach-top__text p {
-  max-width: 510px;
-  margin: 0 0 30px auto;
-} */
-
 /* ======= END TOP ======= */
 
 /* ======= GALLERY ======= */
 
 .gallery {
   text-align: center;
+  overflow: hidden;
 }
 
 .gallery__title {
@@ -978,6 +939,15 @@ button {
     display: none;  
   }
 
+  .reach-top__wrapper {
+    padding-bottom: 0;
+  }
+
+  /* .reach-top__title,
+  .gallery {
+    
+  } */
+
   .reach-top__title {
     text-align: center;
     padding-top: 0;
@@ -996,13 +966,15 @@ button {
 
   .about,
   .benefits,
-  .reach-top {
+  .reach-top,
+  .gallery {
     padding: 50px 0;
   }
 
   .about__title,
   .benefits__title,
-  .reach-top__title {
+  .reach-top__title,
+  .gallery__title {
     margin-bottom: 60px;
   }
 
@@ -1083,6 +1055,12 @@ button {
     display: block;
   }
 
+  .header__icon::before {
+    top: 0;
+    width: 15px;
+    height: 52px;
+  }
+
   .title {
     font-size: 32px;
     padding: 0 20px;
@@ -1096,9 +1074,17 @@ button {
     display: block;
   }
 
+  .header__logo {
+    position: absolute;
+    z-index: 3;
+  }
+
   .menu__list {
     display: none;
-    overflow: scroll; /* ????????????????????????????? */
+  }
+
+  .header__top--active .menu__list {
+    display: block;
   }
 }
 
@@ -1117,15 +1103,18 @@ button {
     font-size: 80px;
   }
 
-  .header__icon::before {
-    display: none;
+  .filter__btn {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 18px;
   }
 }
 
 /* ====== END MEDIA ======*/
 
 /*
-сделать крестик
 плавное появление меню в аддаптиве
 
 иконка - вернуть
