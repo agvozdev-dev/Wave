@@ -130,6 +130,22 @@ button {
   transform-origin: 0% 100%;
 }
 
+.header__top {
+  display: flex;
+  align-items: center;
+  padding-top: 35px;
+  padding-bottom: 10px;
+}
+
+.header__top.header__top--bg-gray {
+  background-color: rgba(33, 33, 33, 0.5);
+  bottom: auto;
+}
+
+.header__top.header__top--active {
+  bottom: 0;
+}
+
 .header__top--active span {
   width: 0;
 }
@@ -174,12 +190,6 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
-}
-
-.header__top {
-  display: flex;
-  align-items: center;
-  padding-top: 35px;
 }
 
 .menu {
@@ -676,7 +686,6 @@ button {
 }
 /* ====== END BLOG ======*/
 
-
 /* ====== TEAM ======*/
 .team {
   padding-bottom: 204px;
@@ -1149,12 +1158,14 @@ button {
 
   .menu__btn {
     display: block;
+    top: 25px;
   }
 
   .header__logo {
     position: absolute;
     z-index: 3;
     top: 20px;
+    left: 10px;
   }
 
   .header__name {
@@ -1162,11 +1173,20 @@ button {
   }
 
   .menu__list {
-    transform: translateY(-250%);
+    transform: translateY(-1000px);
+  }
+
+  .header__top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
   }
 
   .header__top--active .menu__list {
-    overflow: scroll;
+    overflow: auto;
     transform: translateY(0);
   }
 
