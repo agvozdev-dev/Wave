@@ -14,9 +14,9 @@ $(function () {
     $('.header__top').toggleClass('header__top--active');
   })
 
-	$('.menu a').on('click', function (event) {
+	$('.menu a, .header__icon').on('click', function (event) {
 		event.preventDefault();
-    
+
 		var id  = $(this).attr('href'),
 		top = $(id).offset().top;
 		
