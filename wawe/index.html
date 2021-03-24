@@ -16,13 +16,13 @@
   <title>Wawe</title>
 </head>
 
-<body>
+<body id="body">
 
   <header class="header" style="background-image: url('images/bg.jpg');">
     <div class="container">
 
       <div class="header__top">
-        <a class="logo header__logo" href="#">
+        <a class="logo header__logo" href="#body">
           <img class="logo__img" src="images/logo.svg" alt="Логотип">
         </a>
         <nav class="menu">
@@ -30,12 +30,12 @@
             <span class=""></span>
           </button>
           <ul class="menu__list">
-            <li class="menu__item"><a class="menu__link" href="#">О нас</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Услуги</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Стоимость</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Блог</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Команда</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+            <li class="menu__item"><a class="menu__link" href="#about">О нас</a></li>
+            <li class="menu__item"><a class="menu__link" href="#benefits">Услуги</a></li>
+            <li class="menu__item"><a class="menu__link" href="#tarrifs">Стоимость</a></li>
+            <li class="menu__item"><a class="menu__link" href="#blog">Блог</a></li>
+            <li class="menu__item"><a class="menu__link" href="#team">Команда</a></li>
+            <li class="menu__item"><a class="menu__link" href="#feedback">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -52,7 +52,7 @@
     </div>
   </header>
 
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
 
       <h2 class="title about__title">
@@ -109,7 +109,7 @@
     </div>
   </section>
 
-  <section class="benefits">
+  <section class="benefits" id="benefits">
     <div class="container">
       <h2 class="title benefits__title">В школе вы получите</h2>
       <ul class="benefits__list">
@@ -306,7 +306,7 @@
     </div>
   </section>
 
-  <section class="blog">
+  <section class="blog" id="blog">
     <h2 class="title blog__title">Блог</h2>
 
     <ul class="blog__slider slider-serf">
@@ -442,7 +442,7 @@
     </ul>
   </section>
 
-  <section class="team">
+  <section class="team" id="team">
     <div class="container">
       <h2 class="title team__title">Наша команда</h2>
       <ul class="team__images">
@@ -471,7 +471,7 @@
     </div>
   </section>
 
-  <section class="tarrifs">
+  <section class="tarrifs" id="tarrifs">
     <div class="container">
       <h2 class="title tarrifs__title">Пакеты услуг</h2>
       <ul class="tariffs__list">
@@ -535,7 +535,7 @@
     <img class="map__content" src="images/map.jpg" alt="Изображение карты">
   </div>
 
-  <section class="feedback">
+  <section class="feedback" id="feedback">
     <div class="container">
       <h2 class="title feedback__title">Оставить заявку</h2>
       <div class="feedback__wrapper">
@@ -581,7 +581,7 @@
 
 
   <footer class="footer">
-    <a class="logo" href="#">
+    <a class="logo" href="#body">
       <img class="logo__img" src="images/logo.svg" alt="Логотип">
     </a>
   </footer>
